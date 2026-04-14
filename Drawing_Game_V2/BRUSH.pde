@@ -23,6 +23,10 @@ void brush(){
   
   tactCircle(150,350,60,maroon);
   
+  tactCircle(50,450,60,white);
+  
+  tactCircle(150,450,60,black);
+  
   
 }
 
@@ -32,14 +36,38 @@ void brushClick(){
   }
   if(dist(mouseX,mouseY,50,250)<=30){
     selectColour=green;
+    snoopyOn = false;
+    snoopyStampOn = false;
+    snoopySurfOn = false;
   }
   if(dist(mouseX,mouseY,150,250)<=30){
     selectColour = blue;
+    snoopyOn = false;
+    snoopyStampOn = false;
+    snoopySurfOn = false;
   }
   if(dist(mouseX, mouseY, 50,350)<=30){
     selectColour = red;
+    snoopyOn = false;
+    snoopyStampOn = false;
+    snoopySurfOn = false;
   }
   if(dist(mouseX,mouseY, 150,350)<=30){
     selectColour = maroon;
+    snoopyOn = false;
+    snoopyStampOn = false;
+    snoopySurfOn = false;
+  }
+  if(dist(mouseX,mouseY,50,450)<=30){
+    selectColour = white;
+    snoopyOn = false;
+    snoopyStampOn = false;
+    snoopySurfOn = false;
+  }
+  if(dist(mouseX,mouseY,150,450)<=30){
+    selectColour = black;
+    snoopyOn = false;
+    snoopyStampOn = false;
+    snoopySurfOn = false;
   }
 }
